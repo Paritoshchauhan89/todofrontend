@@ -22,7 +22,7 @@ const ContactForm = ({ userRole }) => {
     e.preventDefault();
     try {
       const response = await axios.post('https://todobackend-iilm.onrender.com/api/v1/contact/', contact);
-      if (response.status === 200) {
+      if (response.status >= 200 && response.status < 300) {
         alert('Contact added successfully!');
         setContact(defaultValue); // Reset form after successful submission
         setError(null);

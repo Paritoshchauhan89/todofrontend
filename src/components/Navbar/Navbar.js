@@ -7,7 +7,7 @@ const Navbar = () => {
 <div className="container">
 <div className="m-2">
 <Link to="/add-contact"><button type="button" className="btn btn-outline-primary m-2">Add Contact </button></Link>
-<Link to="/"><button type="button" className="btn btn-outline-primary m-2">View Contact </button></Link>
+<Link to="/all-contacts"><button type="button" className="btn btn-outline-primary m-2">View Contact </button></Link>
 </div>
 </div>
 
